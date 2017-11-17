@@ -11,6 +11,7 @@ If students abuse the webpage then designated teacher users can decide to either
 
 ## Back-End
 Framework: Django, https://www.djangoproject.com/
+
 Database: SQL Light
 
 ## Front-End
