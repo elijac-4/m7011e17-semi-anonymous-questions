@@ -11,5 +11,7 @@ If students abuse the webpage then designated teacher users can decide to either
 
 ## Deployment
 Make an account on pythonanywhere.com
+
 Fork the repository
+
 Follow these steps : https://help.pythonanywhere.com/pages/DeployExistingDjangoProject/ using the fork as repo
