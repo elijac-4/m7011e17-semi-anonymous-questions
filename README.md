@@ -21,13 +21,14 @@ TBT
 1. Make an account on https://www.pythonanywhere.com
 2. Fork the repository
 3. Follow these steps : https://help.pythonanywhere.com/pages/DeployExistingDjangoProject/ using the fork as repo
+4. Follow these steps to set up CSS : https://help.pythonanywhere.com/pages/DjangoStaticFiles
 
 ## Live Webpage
 The live webpage focus on setting up and testing right now and doesn't have any real content. 
 
-* http://floood.pythonanywhere.com/
 * http://floood.pythonanywhere.com/music
 * http://floood.pythonanywhere.com/admin
+* http://floood.pythonanywhere.com/demo/
 
 ## Run Locally (WINDOWS)
 Follow these steps to run the server locally
