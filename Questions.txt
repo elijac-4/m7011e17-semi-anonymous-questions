@@ -1,0 +1,5 @@
+What's been the most difficult so far?
+Why did you choose those technologies?
+How did you come to terms with deployment?
+Are you set in your technologies, or is it bout to changes?
+How is the workload distributed?
