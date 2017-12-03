@@ -1,6 +1,6 @@
 from django.contrib.auth.models import User, Group
 from rest_framework import viewsets
-from .serializers import UserSerializer, GroupSerializer, UserSerializer2
+from .serializers import UserSerializer, GroupSerializer
 
 # For HTML Pages
 from rest_framework.renderers import TemplateHTMLRenderer
@@ -22,20 +22,6 @@ class UserViewSet(viewsets.ModelViewSet):
             self.permission_classes = (AllowAny,)
 
         return super(UserViewSet, self).get_permissions()
-
-
-class UserViewSet2(viewsets.ModelViewSet):
-    """
-    API endpoint that allows users to be viewed or edited.
-    """
-    queryset = User.objects.all().order_by('-date_joined')
-    serializer_class = UserSerializer2
-
-    def get_permissions(self):
-        if self.request.method == 'POST':
-            self.permission_classes = (AllowAny,)
-
-        return super(UserViewSet2, self).get_permissions()
 
 
 class GroupViewSet(viewsets.ModelViewSet):

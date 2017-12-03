@@ -5,17 +5,12 @@ from django.contrib.auth.hashers import make_password
 
 
 class UserSerializer(serializers.HyperlinkedModelSerializer):
-    class Meta:
-        model = User
-        fields = ('url', 'username', 'email', 'groups')
-
-
-class UserSerializer2(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         model = User
         fields = ('url', 'username', 'email', 'groups', 'password')
 
+    # this ignore the groups input(!)
     def create(self, validated_data):
         user = User.objects.create(
             email=validated_data['email'],
